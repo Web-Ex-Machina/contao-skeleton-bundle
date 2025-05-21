@@ -16,6 +16,7 @@ class Plugin implements BundlePluginInterface, RoutingPluginInterface
     {
         return [];
     }
+
     public function getRouteCollection(LoaderResolverInterface $resolver, KernelInterface $kernel)
     {
         return $resolver

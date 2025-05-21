@@ -3,22 +3,23 @@
 declare(strict_types=1);
 
 use Rector\Config\RectorConfig;
-use Rector\Symfony\Set\SymfonySetList;
+use Contao\Rector\Set\ContaoSetList;
 
 return RectorConfig::configure()
     ->withPaths([__DIR__ . '/src'])
-    ->withPhpSets($php74= true)
     ->withSets([
-        SymfonySetList::SYMFONY_72,
+        ContaoSetList::CONTAO_53,
+        ContaoSetList::ANNOTATIONS_TO_ATTRIBUTES,
+        ContaoSetList::FQCN
     ])
     ->withPreparedSets(
-        $deadCode= true,
-        $codeQuality= true,
-        $codingStyle= true,
-        $typeDeclarations= true,
-        $instanceOf= true,
-        $earlyReturn= true,
-        $strictBooleans= true,
-        $doctrineCodeQuality= true,
-        $symfonyCodeQuality= true
+        deadCode: true,
+        codeQuality: true,
+        codingStyle: true,
+        typeDeclarations: true,
+        instanceOf: true,
+        earlyReturn: true,
+        strictBooleans: true,
+        doctrineCodeQuality: true,
+        symfonyCodeQuality: true
     );
