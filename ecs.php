@@ -10,7 +10,10 @@ use Symplify\EasyCodingStandard\Config\ECSConfig;
 
 return ECSConfig::configure()->withSets([SetList::CONTAO])
     ->withConfiguredRule(HeaderCommentFixer::class, [
-        'header' => "Skeleton Bundle for Contao Open Source CMS \n@author   WebEx Machina \n\n@see     https://github.com/Web-Ex-Machina/contao-skeleton-bundle/",
+        'header' => "Skeleton Bundle for Contao Open Source CMS \n
+        @author   Web Ex Machina \n\n
+        @see     https://github.com/Web-Ex-Machina/contao-skeleton-bundle/ \n
+        @license     https://www.apache.org/licenses/LICENSE-2.0 Apache 2.0",
     ])
 
     ->withPaths([
