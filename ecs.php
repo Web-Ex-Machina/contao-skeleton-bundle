@@ -2,13 +2,18 @@
 
 declare(strict_types=1);
 
+use PhpCsFixer\Fixer\Comment\HeaderCommentFixer;
 use Symplify\CodingStandard\Fixer\ArrayNotation\ArrayOpenerAndCloserNewlineFixer;
 
 use Contao\EasyCodingStandard\Set\SetList;
 use Symplify\EasyCodingStandard\Config\ECSConfig;
 
 return ECSConfig::configure()->withSets([SetList::CONTAO])
-->withPaths([
+    ->withConfiguredRule(HeaderCommentFixer::class, [
+        'header' => "Skeleton Bundle for Contao Open Source CMS \n@author   WebEx Machina \n\n@see     https://github.com/Web-Ex-Machina/contao-skeleton-bundle/",
+    ])
+
+    ->withPaths([
     __DIR__ . '/src',
 ])
 ->withSkip([
