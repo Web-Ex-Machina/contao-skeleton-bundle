@@ -1,0 +1,49 @@
+{
+    "name": "webexmachina/skeleton",
+    "version": "0.0.1-dev",
+    "description": "Contao 5 Skeleton Bundle.",
+    "type": "contao-bundle",
+    "license": "Apache-2.0",
+    "website" : "https://www.webexmachina.fr/",
+    "authors": [
+        {
+            "name": "Web ex Machina",
+            "homepage": "https://www.webexmachina.fr",
+            "role":"Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "contao/core-bundle": "5.*"
+    },
+    "autoload":{
+        "psr-4": {
+            "SkeletonBundle\\": "src/"
+        }
+    },
+    "scripts": {
+        "rector": "vendor/bin/rector p --ansi",
+        "rector-dry": "vendor/bin/rector p --dryrun --ansi",
+        "check-cs": "vendor/bin/ecs check --ansi",
+        "fix-cs": "vendor/bin/ecs check --fix --ansi"
+    },
+    "extra":{
+        "contao-manager-plugin": "WebExMachina\\SkeletonBundle\\ContaoManager\\Plugin"
+    },
+    "config": {
+        "allow-plugins": {
+            "contao-components/installer": true,
+            "php-http/discovery": true,
+            "contao/manager-plugin": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "conflict": {
+        "contao/manager-plugin": "<2.0 || >=3.0"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.13",
+        "contao/easy-coding-standard": "^6.13",
+        "rector/rector": "^2.0"
+    }
+}
