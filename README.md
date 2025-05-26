@@ -14,8 +14,6 @@ This repository provides a skeleton bundle for Contao 5+, designed to help you q
 - Includes Easy Coding Standard for code styling
 - Uses Rector for automated refactoring
 
----
-
 ## Installation Guide
 
 To use this bundle, follow these steps:
@@ -25,7 +23,6 @@ To use this bundle, follow these steps:
 1. Download the repository as a ZIP file (you can do this from the "Code" dropdown in GitHub).
 2. Extract the ZIP file to your desired development location.
 
----
 
 ### Step 2: Rename Files and Namespace
 
@@ -42,27 +39,22 @@ You need to rename certain files and namespaces to customize the bundle for your
 > [!TIP]
 > Use a text editor or IDE with a global find-and-replace feature to ensure all occurrences are updated.
 
----
 
 ### Step 3: Install Dependencies
 
 Run the following commands in your terminal to install any required dependencies with Composer.
 
----
 
-### Troubleshooting
+## Troubleshooting
 
 If you encounter any issues:
 - Ensure that you use PHP 8.2+.
 - Check that all references to `WebExMachina` and `SkeletonBundle` are renamed properly.
 
----
 
 ## Contribution
 
 This bundle is experimental and contributions are welcome! If you find a bug or have suggestions for improvements, feel free to submit an issue or pull request.
-
----
 
 ## License
 
