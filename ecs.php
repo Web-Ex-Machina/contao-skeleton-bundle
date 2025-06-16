@@ -32,7 +32,7 @@ return ECSConfig::configure()->withSets([SetList::CONTAO])
 
     // NOTE : common intègre les règles : arrays, spaces, namespaces, docblocks, controlStructures, phpunit, comments
 ->withPreparedSets(
-    $psr12=true,
-    $common=true,
-    $strict=true,
+    psr12: true,
+    common: true,
+    strict: true,
 );
